@@ -294,7 +294,7 @@ clear`);
     print("*  while quickly mastering new tools when needed.           *");
     print("*                                                           *");
     print("*   Type 'help' to get started                              *");
-    print("************************************************************");
+    print("*************************************************************");
     print("");
     print("  System Information:");
     print("  Hostname: portfolio.localhost");
