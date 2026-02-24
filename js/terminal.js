@@ -189,7 +189,7 @@ clear`);
                 break;
 
             case "uname":
-                print("Linux portfolio 5.15.0 x86_64 GNU/Linux");
+                print("Linux portfolio 6.11.0 x86_64 GNU/Linux");
                 break;
 
             case "theme":
@@ -212,7 +212,7 @@ clear`);
                 if (parts[1] === "hire-me") {
                     print("Access granted.");
                     print("You clearly know quality.");
-                    print("Contact: your@email.com");
+                    print("Contact: sunil@sunil.cc");
                 } else {
                     print("sudo: command not allowed");
                 }
@@ -291,7 +291,7 @@ clear`);
     print("*  18 Years Experience                                      *");
     print("*  I approach complex infrastructure challenges methodically*");
     print("*  prioritizing automation, observability, and resilience   *");
-    print("*  while quickly mastering new tools when needed.          *");
+    print("*  while quickly mastering new tools when needed.           *");
     print("*                                                           *");
     print("*   Type 'help' to get started                              *");
     print("************************************************************");
