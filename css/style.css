@@ -1,0 +1,146 @@
+:root {
+    --bg: #000000;
+    --text: #00ff88;
+    --border: #003322;
+    --glow: 0 0 4px #00ff88;
+}
+
+
+body {
+    margin: 0;
+    background: var(--bg);
+    color: var(--text);
+    font-family: "Courier New", monospace;
+    font-size: 16px;
+    text-shadow: var(--glow);
+}
+
+body.light {
+    --bg: #ffffff;
+    --text: #000000;
+    --border: #cccccc;
+    --glow: none;
+}
+
+#terminal {
+    padding: 20px;
+    padding-bottom: 80px;
+    max-width: 1000px;
+}
+
+.line {
+    white-space: pre-wrap;
+    margin-bottom: 4px;
+}
+
+.input-line {
+    display: flex;
+}
+
+.prompt {
+    margin-right: 6px;
+}
+
+input {
+    background: transparent;
+    border: none;
+    outline: none;
+    color: var(--text);
+    font-family: inherit;
+    font-size: inherit;
+    width: 100%;
+}
+
+a {
+    color: var(--text);
+}
+
+#footer {
+    position: fixed;
+    bottom: 0;
+    width: 100%;
+    background: var(--bg);
+    border-top: 1px solid var(--border);
+    padding: 8px 20px;
+    font-size: 13px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    flex-wrap: wrap;
+}
+
+#footer-links {
+    display: flex;
+    align-items: center;
+    flex-wrap: wrap;
+}
+
+#footer-links a {
+    color: var(--text);
+    text-decoration: none;
+    margin-left: 12px;
+    display: flex;
+    align-items: center;
+    gap: 4px;
+}
+
+#footer-links a:hover {
+    text-decoration: underline;
+}
+
+#footer-links svg {
+    vertical-align: middle;
+}
+/* ===== HEADER ===== */
+
+#header {
+    position: fixed;
+    top: 0;
+    width: 95%;
+    background: var(--bg);
+    border-bottom: 1px solid var(--border);
+    padding: 8px 20px;
+    font-size: 14px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    z-index: 1000;
+}
+
+#header-links {
+    display: flex;
+    gap: 20px;
+}
+
+#header-links a {
+    color: var(--text);
+    text-decoration: none;
+}
+
+#header-links a:hover {
+    text-decoration: underline;
+}
+
+/* Push terminal below header */
+#terminal {
+    padding: 70px 20px 80px 20px;
+    max-width: 1000px;
+}
+#header-right {
+    display: flex;
+    align-items: center;
+    gap: 15px;
+}
+
+#theme-toggle {
+    background: transparent;
+    border: 1px solid var(--border);
+    color: var(--text);
+    padding: 4px 10px;
+    cursor: pointer;
+    font-family: inherit;
+}
+
+#theme-toggle:hover {
+    opacity: 0.8;
+}
