@@ -306,19 +306,15 @@ clear`);
 }
 
 // Simulated login sequence
-function bootSequence() {
-    print("Connecting to portfolio server...");
-    
-    setTimeout(() => {
-        print("Authenticating...");
-    }, 3000);
-
-    setTimeout(() => {
-        print("Access granted.");
-        print("");
-        showIssuePage();
-    }, 2000);
-}
+function bootSequence() 
+    { print("Connecting to portfolio server..."); 
+    setTimeout(() => { print("Authenticating..."); 
+    setTimeout(() => { print("Access granted."); 
+    print(""); showIssuePage(); 
+    }, 
+    2000); 
+    }, 
+    4000); }
 
 bootSequence();
 
