@@ -277,7 +277,7 @@ clear`);
     // =========================
     function showIssuePage() {
 
-    print("Ubuntu 22.04.3 LTS \\n \\l");
+    print("AlmaLinux release 10.1 (Heliotrope Lion) \\n \\l");
     print("");
 
     print("Last login: " + new Date().toLocaleString());
@@ -298,7 +298,7 @@ clear`);
     print("");
     print("  System Information:");
     print("  Hostname: portfolio.localhost");
-    print("  Kernel: 6.11.0-generic x86_64");
+    print("  Kernel: 6.12.0-124-generic x86_64");
     print("  Uptime: just booted");
     print("");
 
@@ -308,14 +308,16 @@ clear`);
 // Simulated login sequence
 function bootSequence() {
     print("Connecting to portfolio server...");
+    
     setTimeout(() => {
         print("Authenticating...");
-        setTimeout(() => {
-            print("Access granted.");
-            print("");
-            showIssuePage();
-        }, 600);
-    }, 800);
+    }, 3000);
+
+    setTimeout(() => {
+        print("Access granted.");
+        print("");
+        showIssuePage();
+    }, 2000);
 }
 
 bootSequence();
