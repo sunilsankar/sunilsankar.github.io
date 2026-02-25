@@ -44,7 +44,7 @@ if (themeToggle) {
     // Fake File System
     // =========================
     const fileSystem = {
-        "about.txt": `I am Linux Architech with 18 years experience in SRE/DevOps`,
+        "about.txt": `I am Linux Architect with 18 years experience in SRE/DevOps`,
 
         "skills.txt": `Infrastructure & DevOps:
 AWS, Azure , Docker, Kubernetes, Terraform, Packer, Vagrant
